@@ -1,15 +1,23 @@
 # HP Elitebook 850 G2 Hackintosh (Broadwell - 5th Gen.)
 
+## Information
+- System: MacOS Monterey 12.x
+- SMBIOS: MacBookAir7,2
+- Bootloader: OpenCore 0.8.8
+- ToDo: Upgrade to MacOS Ventura 13.x
+- Status: WIP
+
 ## Hardware
 - Processor: Intel Core i7 5500U @2,4Ghz, Turbo@3,0Ghz, TDP: 15W
 - iGPU: Intel HD Graphics 5500
 - dGPU: AMD Radeon R7 M260X - 1GB Shared Memory GDDR5
 - Display: FullHD 1920x1080
 - RAM: 2x8GB DDR3L DualChannel SDRAM - 16GB in Total
-- Audio: ALC280
+- Audio: Realtek ALC280 
 - Ethernet: Intel I218LM Gigabit Networkadaptor
 - WiFi & Bluetooth: Intel Dualband Wireless AC7265 B/G/N 2,4/5Ghz
 - Trackpad: MultiTouch Synaptics
+- Keyboard: HP OEM Keyboard with White Backlight
 - SDCard Reader: Realtek RTS5227
 - Webcam: HP HD Camera
 - Fingerprint Sensor: Synaptics (PID003f)
@@ -42,9 +50,35 @@
 6. Reboot your PC and Boot from it via F9 Key!
 
 ## Downloads
+> - coming soon - 
 
 ## Working
+- Boot
+- Audio (Speaker,Mic,Combo Jack)
+- iGPU QI/CI HD 5500
+- Display & Brightness Control
+- WiFi & Bluetooth (not the best Speed - 30/40MB/s, if u dont care about Speed then its fine else if not - Replace with a Compatible Broadcom/Atheros WiFi Card)
+- Ethernet
+- 4G Modem/Module (not tested but detected by MacOS)
+- FN-Keys Function e.g. Brightness,Audio,...
+- Touchpad(all Trackpad functions e.g. Gestures) & Keyboard
+- Battery (Detected,Shows information)
+- All USB Ports (EHCI(2.0),XHCI(3.0))
+- SATA Controller
+- Memory DIMM Bank1/Bank2 Informations
+- Webcam
+- RTC/CMOS (50/50)
+- Power Managment
+- NVRAM
 
 ## Not Working
+- dGPU (Not Compatible with MacOS), Disabled via boot-arg `-wegnoegpu`
+- Fingerprint Reader (will never Works in MacOS)
 
-> - coming soon - 
+## In Progress (WIP)
+- Sleep/Wake
+- Close/open lid cause blackscreen and need Force Power off
+- Restart/Shutdown (Need Force Power Off when Blackscreen comes)
+- Remove Charger cause Freeze
+- RTC
+- SDCard Reader
