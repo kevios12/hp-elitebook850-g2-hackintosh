@@ -17,7 +17,29 @@
 - USB: 5x 3.0
 - Misc: Wireless Buttons/FN Keys Functions
 
+## Requirements
+- min. 16GB USB Drive
+- Network Connection
+- Brain.exe
+
 ## Installation 
+1. Prepare your UEFI
+   - Load Default Settings
+   - Disable VT-d (already Disabled via OpenCore Config (DisableIOMapper))
+   - Enable VT-x
+   - Disable Fastboot
+   - Disable SecureBoot
+   - Enable XHCI USB 
+   - SATA Mode: AHCI
+   - DVMT Pre-Allocated Memory set to 64MB or Higher
+
+2. Download MacOS Monterey from AppStore 
+3. Prepare your USB Stick
+   - Format via Disk Utility your USB-Drive in GUID and MacOS(HFS)
+   - Run Terminal and enter following code to Create the Installer Medium: `sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/yourusbname` | Replace yourusbname with your created USB Drive Name
+4. run via Terminal: `sudo diskutil list` then find your USB Device e.g. disk0sX (u must have 2 Partitions e.g. EFI and Install Monterey) Pick the EFI and run `sudo diskutil mount diskXsX`. Now u have mounted your EFI Partition.
+5. Copy the EFI Folder to the USB Drive. The Structure must be: /drive/EFI/EFI/OCandBOOT/
+6. Reboot your PC and Boot from it via F9 Key!
 
 ## Downloads
 
