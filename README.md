@@ -6,7 +6,8 @@
 - System: MacOS Monterey 12.x
 - SMBIOS: MacBookAir7,2
 - Bootloader: OpenCore 0.8.8
-- ToDo: Upgrade to MacOS Ventura 13.x
+- ToDo: Fix all In Progress Stuff | Upgrade to MacOS Ventura 13.x 
+- [x] NVRAM Reset after Install recommended
 - Status: WIP
 
 ## Hardware
@@ -72,12 +73,16 @@
 - [x] Touchpad(all Trackpad functions e.g. Gestures) & Keyboard
 - [x] Battery (Detected,Shows information)
 - [x] All USB Ports (EHCI(2.0),XHCI(3.0))
+- [x] Realtek SDCard Reader (Shown as Internal SDReader, not tested - no SDCard for it!)
 - [x] SATA Controller
 - [x] Memory DIMM Bank1/Bank2 Informations
 - [x] Webcam
-- [x] RTC/CMOS (50/50)
+- [x] RTC/CMOS
 - [x] Power Managment (50/50)
+- [x] Restart/Shutdown***
 - [x] NVRAM
+
+*** = After a NVRAM Reset u need perform a Restart, to get CMOS State Fixed + Restart/Shutdown (after u get first Shutdown worked, its all fine. Hope we will find a Fix to get from Beginning working, restart seems working all time.) 
 
 ## Not Working
 - [ ] dGPU (Not Compatible with MacOS), Disabled via boot-arg `-wegnoegpu`
@@ -87,7 +92,4 @@
 - Finetuning e.g. CPU Powermanagment CPUFriendDATAProvider
 - Sleep/Wake
 - Close/open lid cause blackscreen and need Force Power off
-- Restart/Shutdown (Need Force Power Off when Blackscreen comes)
-- Remove Charger cause Freeze
-- RTC
-- SDCard Reader
+- Remove Charger Rebooting System
