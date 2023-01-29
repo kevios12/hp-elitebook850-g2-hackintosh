@@ -78,10 +78,13 @@
 - [x] Memory DIMM Bank1/Bank2 Informations
 - [x] Webcam
 - [x] RTC/CMOS
-- [x] Power Managment (50/50)
+- [x] Power Managment** [IntelPowerGadget Screenshot](IntelPowerGadgetCPU.png "IntelPowerGadget")
 - [x] Restart/Shutdown***
+- [x] Fan+AutoControl (OpenCore Driver: `HPFanReset.efi`)
 - [x] NVRAM
 
+** = Without these File u running probably in HighPerf Mode. My HP cant use fine tuned Power Powermanagment due to issues with Balanced Mode, my HP Likes only High Perf. Mode. So without the SSDT, the High Perf. Mode is always active. The SSDT need into the Folder: `/EFI/EFI/OC/ACPI/` and edit the config.plist with an Plist Editor e.g.[ProperTree-master](https://github.com/corpnewt/ProperTree "Plist Editor") and add them there.\
+\
 *** = After a NVRAM Reset u need perform a Restart, to get CMOS State Fixed + Restart/Shutdown (after u get first Shutdown worked, its all fine. Hope we will find a Fix to get from Beginning working, restart seems working all time.) 
 
 ## Not Working
@@ -89,7 +92,6 @@
 - [ ] Fingerprint Reader (will never Works in MacOS)
 
 ## In Progress (WIP)
-- Finetuning e.g. CPU Powermanagment CPUFriendDATAProvider
 - Sleep/Wake
 - Close/open lid cause blackscreen and need Force Power off
 - Remove Charger Rebooting System

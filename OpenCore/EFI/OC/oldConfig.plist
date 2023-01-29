@@ -62,6 +62,14 @@
                     <key>Path</key>
                     <string>SSDT-USBX.aml</string>
                 </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>Power Managment</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-ACPICPUPOWER.aml</string>
+                </dict>
             </array>
             <key>Delete</key>
             <array/>
@@ -1191,7 +1199,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-v keepsyms=1 debug=0x100 -wegnoegpu -ighfnohdmi rtcfx_exclude=58-5A,DE-E0 rtsx_sleep_wake_delay_ms=1000</string>
+                    <string>-v keepsyms=1 debug=0x100 -wegnoegpu -ighfnohdmi rtcfx_exclude=58-5A,DE-E0</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
