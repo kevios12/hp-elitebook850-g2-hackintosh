@@ -1,5 +1,7 @@
 # HP Elitebook 850 G2 Hackintosh (Broadwell - 5th Gen.)
 
+![Screenshot](Screenshot.jpg)
+
 ## Information
 - System: MacOS Monterey 12.x
 - SMBIOS: MacBookAir7,2
@@ -48,6 +50,11 @@
 4. run via Terminal: `sudo diskutil list` then find your USB Device e.g. disk0sX (u must have 2 Partitions e.g. EFI and Install Monterey) Pick the EFI and run `sudo diskutil mount diskXsX`. Now u have mounted your EFI Partition.
 5. Copy the EFI Folder to the USB Drive. The Structure must be: /drive/EFI/EFI/OCandBOOT/
 6. Reboot your PC and Boot from it via F9 Key!
+7. When the Installer is Booted, Goto Disk Utility > Show All Volumes > Erase your Disk as APFS and GUID
+8. The System will several restarts. Keep in mind, u need every Reboot Press F9 to boot from USB or set as Default Boot Option in UEFI
+9. Finish Setup Assistent
+10. Copy EFI to Main Partition(proceed like in Step 4.)
+11. Congrulations, ur Hackintosh is Ready!
 
 ## Downloads
 > - coming soon - 
@@ -61,6 +68,7 @@
 - Ethernet
 - 4G Modem/Module (not tested but detected by MacOS)
 - FN-Keys Function e.g. Brightness,Audio,...
+- Wireless/Mute Button
 - Touchpad(all Trackpad functions e.g. Gestures) & Keyboard
 - Battery (Detected,Shows information)
 - All USB Ports (EHCI(2.0),XHCI(3.0))
