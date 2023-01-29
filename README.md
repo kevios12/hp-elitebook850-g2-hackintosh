@@ -60,30 +60,31 @@
 > - coming soon - 
 
 ## Working
-- Boot
-- Audio (Speaker,Mic,Combo Jack)
-- iGPU QI/CI HD 5500
-- Display & Brightness Control
-- WiFi & Bluetooth (not the best Speed - 30/40MB/s, if u dont care about Speed then its fine else if not - Replace with a Compatible Broadcom/Atheros WiFi Card)
-- Ethernet
-- 4G Modem/Module (not tested but detected by MacOS)
-- FN-Keys Function e.g. Brightness,Audio,...
-- Wireless/Mute Button
-- Touchpad(all Trackpad functions e.g. Gestures) & Keyboard
-- Battery (Detected,Shows information)
-- All USB Ports (EHCI(2.0),XHCI(3.0))
-- SATA Controller
-- Memory DIMM Bank1/Bank2 Informations
-- Webcam
-- RTC/CMOS (50/50)
-- Power Managment
-- NVRAM
+- [x] Boot
+- [x] Audio (Speaker,Mic,Combo Jack)
+- [x] iGPU QI/CI
+- [x] Display & Brightness Control
+- [x] WiFi & Bluetooth (not the best Speed - 30/40MB/s, if u dont care about Speed then its fine else if not - Replace with a Compatible Broadcom/Atheros WiFi Card)
+- [x] Ethernet
+- [x] 4G Modem/Module (SIM not tested but detected by MacOS)
+- [x] FN-Keys Function e.g. Brightness,Audio,...
+- [x] Wireless/Mute Button
+- [x] Touchpad(all Trackpad functions e.g. Gestures) & Keyboard
+- [x] Battery (Detected,Shows information)
+- [x] All USB Ports (EHCI(2.0),XHCI(3.0))
+- [x] SATA Controller
+- [x] Memory DIMM Bank1/Bank2 Informations
+- [x] Webcam
+- [x] RTC/CMOS (50/50)
+- [x] Power Managment (50/50)
+- [x] NVRAM
 
 ## Not Working
-- dGPU (Not Compatible with MacOS), Disabled via boot-arg `-wegnoegpu`
-- Fingerprint Reader (will never Works in MacOS)
+- [ ] dGPU (Not Compatible with MacOS), Disabled via boot-arg `-wegnoegpu`
+- [ ] Fingerprint Reader (will never Works in MacOS)
 
 ## In Progress (WIP)
+- Finetuning e.g. CPU Powermanagment CPUFriendDATAProvider
 - Sleep/Wake
 - Close/open lid cause blackscreen and need Force Power off
 - Restart/Shutdown (Need Force Power Off when Blackscreen comes)
