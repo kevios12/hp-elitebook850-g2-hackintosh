@@ -8,7 +8,8 @@
 - Bootloader: OpenCore 0.8.8
 - ToDo: Fix all In Progress Stuff | Upgrade to MacOS Ventura 13.x 
 - NVRAM Reset after Install recommended
-- Status: WIP
+- Status: WIP/90% Done
+- Every Star Symbol has a extra Note in the Section
 
 ## Hardware
 - Processor: Intel Core i7 5500U @2,4Ghz, Turbo@3,0Ghz, TDP: 15W
@@ -58,7 +59,10 @@
 11. Congrulations, ur Hackintosh is Ready!
 
 ## Downloads
-> - coming soon - 
+- [ProperTree-master](https://github.com/corpnewt/ProperTree "Plist Editor")
+- [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools "OCAuxiliaryTools")
+- [IntelPowerGadget](https://www.intel.com/content/www/us/en/developer/articles/tool/power-gadget.html "IntelPowerGadget")
+- [HWMonitorSMC2](https://github.com/CloverHackyColor/HWMonitorSMC2 "HWMonitorSMC2")
 
 ## Working
 - [x] Boot
@@ -71,7 +75,7 @@
 - [x] FN-Keys Function e.g. Brightness,Audio,...
 - [x] Wireless/Mute Button
 - [x] Touchpad(all Trackpad functions e.g. Gestures) & Keyboard
-- [x] Battery (Detected,Shows information)
+- [x] Battery (Detected,Shows information, Plugin Charger only)*
 - [x] All USB Ports (EHCI(2.0),XHCI(3.0))
 - [x] Realtek SDCard Reader (Shown as Internal SDReader, not tested - no SDCard for it!)
 - [x] SATA Controller
@@ -82,16 +86,19 @@
 - [x] Restart/Shutdown***
 - [x] Fan+AutoControl (OpenCore Driver: `HPFanReset.efi`)
 - [x] NVRAM
+- [x] SLEEP (Wake not)
 
-** = Without these File u running probably in HighPerf Mode. My HP cant use fine tuned Power Powermanagment due to issues with Balanced Mode, my HP Likes only High Perf. Mode. So without the SSDT, the High Perf. Mode is always active. The SSDT need into the Folder: `/EFI/EFI/OC/ACPI/` and edit the config.plist with an Plist Editor e.g.[ProperTree-master](https://github.com/corpnewt/ProperTree "Plist Editor") and add them there.\
+*= If u want actually run in Battery Mode, reboot your Machine, unplug Charger. Plugin Charger while running System Works.\
 \
-*** = After a NVRAM Reset u need perform a Restart, to get CMOS State Fixed + Restart/Shutdown (after u get first Shutdown worked, its all fine. Hope we will find a Fix to get from Beginning working, restart seems working all time.) 
+**= Without these File u running probably in HighPerf Mode. My HP cant use fine tuned Power Powermanagment due to issues with Balanced Mode, my HP Likes only High Perf. Mode. So without the SSDT, the High Perf. Mode is always active. The SSDT need into the Folder: `/EFI/EFI/OC/ACPI/` and edit the config.plist with an Plist Editor e.g. ProperTree (See Downloads) and add them there.\
+\
+***= After a NVRAM Reset u need perform a Restart, to get CMOS State Fixed + Restart/Shutdown (after u get first Shutdown worked, its all fine. Hope we will find a Fix to get from Beginning working, restart seems working all time.) 
 
 ## Not Working
 - [ ] dGPU (Not Compatible with MacOS), Disabled via boot-arg `-wegnoegpu`
 - [ ] Fingerprint Reader (will never Works in MacOS)
 
 ## In Progress (WIP)
-- Sleep/Wake
+- Wake (Reboot the Machine on Wake)
 - Close/open lid cause blackscreen and need Force Power off
-- Remove Charger Rebooting System
+- Unplug Charger reboot the Machine

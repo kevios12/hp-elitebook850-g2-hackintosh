@@ -48,7 +48,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string></string>
+                    <string>OS Conflicts</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -56,11 +56,11 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Allow USB Resets</string>
+                    <string>Read FAN Speed</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-USBX.aml</string>
+                    <string>SSDT-FANREAD.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -941,7 +941,7 @@
                 <key>DisableLinkeditJettison</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
-                <false/>
+                <true/>
                 <key>ExtendBTFeatureFlags</key>
                 <false/>
                 <key>ExternalDiskIcons</key>
@@ -1008,7 +1008,7 @@
                 <key>PickerVariant</key>
                 <string>Acidanthera\GoldenGate</string>
                 <key>PollAppleHotKeys</key>
-                <false/>
+                <true/>
                 <key>ShowPicker</key>
                 <true/>
                 <key>TakeoffDelay</key>
@@ -1191,7 +1191,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-v keepsyms=1 debug=0x100 -wegnoegpu -ighfnohdmi rtcfx_exclude=58-5A,DE-E0</string>
+                    <string>-v keepsyms=1 debug=0x100 -wegnoegpu -ighfnohdmi rtcfx_exclude=0E-FF</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
